@@ -1346,5 +1346,31 @@
       defer=""
       src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      // Reveal specific elements
+      ScrollReveal().reveal('.content, .section', {
+          distance: '20px',
+          duration: 1000,
+          origin: 'bottom',
+          reset: false
+      });
+
+      // Reveal only header elements with a different animation
+      ScrollReveal().reveal('h1, h2, h3, h4, h5, h6', {
+          distance: '40px',
+          duration: 1200,
+          origin: 'top',
+          reset: true
+      });
+
+      // Reveal images with a different animation
+      ScrollReveal().reveal('img', {
+          distance: '100px',
+          duration: 1500,
+          origin: 'left',
+          reset: false
+      });
+    </script>
   </body>
 </html>
