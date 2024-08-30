@@ -1,0 +1,41 @@
+.banner1-container1 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0);
+}
+.banner1-max-width {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner1-container2 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner1-title {
+  text-align: center;
+  font-family: "Fira Sans";
+}
+.banner1-text {
+  display: none;
+  text-align: center;
+}
+.banner1-link {
+  width: 143px;
+  height: 38px;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  transition: 0.3s;
+  font-family: "Arial";
+  text-decoration: none;
+}
+.banner1-link:hover {
+  background-color: #10100f;
+}
+.banner1root-class-name {
+  background-color: #ffffff;
+}
