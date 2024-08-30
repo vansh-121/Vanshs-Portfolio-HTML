@@ -913,7 +913,7 @@
 }
 .home-clients {
   width: 100%;
-  display: flex;
+  display: none;
   max-width: var(--dl-size-size-maxcontent);
   margin-top: var(--dl-space-space-fiveunits);
   align-items: center;
@@ -1007,14 +1007,14 @@
   width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxcontent);
-  margin-top: var(--dl-space-space-fiveunits);
+  margin-top: var(--dl-space-space-tenunits);
   align-items: center;
-  padding-top: var(--dl-space-space-fiveunits);
+  padding-top: var(--dl-space-space-tenunits);
   padding-left: var(--dl-space-space-tripleunit);
-  margin-bottom: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-tenunits);
   padding-right: var(--dl-space-space-tripleunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-tenunits);
 }
 .home-heading-container3 {
   width: 45%;

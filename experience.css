@@ -636,21 +636,6 @@
   font-style: italic;
   font-weight: 400;
 }
-.experience-text129 {
-  font-weight: 400;
-}
-.experience-text130 {
-  font-weight: 700;
-}
-.experience-text131 {
-  font-weight: 400;
-}
-.experience-text132 {
-  font-weight: 700;
-}
-.experience-text133 {
-  font-weight: 400;
-}
 .experience-fragment30 {
   display: contents;
 }
@@ -770,12 +755,6 @@
   display: inline-block;
   font-style: italic;
   font-weight: 400;
-}
-.experience-text105 {
-  font-weight: 700;
-}
-.experience-text107 {
-  font-weight: 700;
 }
 .experience-fragment17 {
   display: contents;
@@ -1127,22 +1106,26 @@
   }
 }
 @media(max-width: 479px) {
+  .timeline10-max-width {
+    width: 337px;
+  }
   .timeline10-container12 {
     width: 100%;
     align-items: stretch;
     flex-direction: column;
   }
   .timeline10-timeline-container {
-    width: 407px;
+    width: 344px;
     padding-right: 0px;
   }
   .timeline10-step1 {
-    width: 472px;
+    width: 343px;
     height: 501px;
     margin-top: var(--dl-space-space-tenunits);
     margin-right: 0px;
-    padding-left: var(--dl-space-space-doubleunit);
+    padding-left: 0px;
     margin-bottom: var(--dl-space-space-tenunits);
+    padding-right: var(--dl-space-space-unit);
   }
   .timeline10-container13 {
     top: 10px;
@@ -1159,12 +1142,16 @@
     width: 100%;
     height: 336px;
     padding-left: 29px;
-    padding-right: 94px;
+    padding-right: 45px;
   }
   .timeline10-container17 {
     width: 100%;
     align-items: stretch;
     flex-direction: column;
+  }
+  .timeline10-container18 {
+    width: 354px;
+    padding-right: 13px;
   }
   .timeline10-step2 {
     width: 369px;
@@ -1173,7 +1160,7 @@
   }
   .timeline10-container19 {
     width: 331px;
-    height: 448px;
+    height: 547px;
     margin-top: 0px;
     padding-left: 21px;
     padding-right: 0px;
@@ -1200,12 +1187,12 @@
     left: -374px;
   }
   .timeline10-step3 {
-    width: 423px;
+    width: 338px;
     height: 487px;
   }
   .timeline10-container27 {
-    width: 428px;
-    height: 271px;
+    width: 100%;
+    height: 355px;
     margin-top: 0px;
     margin-bottom: var(--dl-space-space-tenunits);
     padding-right: 0px;
@@ -1216,27 +1203,49 @@
     flex-direction: column;
   }
   .timeline10-container31 {
-    width: 424px;
+    width: 339px;
   }
   .timeline10-step4 {
-    width: 437px;
-    height: 514px;
-    margin-top: var(--dl-space-space-fiveunits);
+    width: 100%;
+    height: 434px;
+    margin-top: var(--dl-space-space-unit);
     padding-top: 0px;
+    margin-bottom: 0px;
     padding-bottom: 0px;
   }
   .timeline10-container32 {
-    width: 368px;
-    height: 336px;
-    margin-top: var(--dl-space-space-fourunits);
+    width: 342px;
+    height: 412px;
+    margin-top: var(--dl-space-space-doubleunit);
     padding-left: 45px;
     margin-bottom: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-doubleunit);
+    padding-right: var(--dl-space-space-halfunit);
   }
   .timeline10-container33 {
     width: 100%;
     align-items: stretch;
     flex-direction: column;
+  }
+  .experience-text129 {
+    font-weight: 400;
+  }
+  .experience-text130 {
+    font-weight: 700;
+  }
+  .experience-text131 {
+    font-weight: 400;
+  }
+  .experience-text132 {
+    font-weight: 700;
+  }
+  .experience-text133 {
+    font-weight: 400;
+  }
+  .experience-text105 {
+    font-weight: 700;
+  }
+  .experience-text107 {
+    font-weight: 700;
   }
 }
 
@@ -1579,12 +1588,6 @@
   font-style: italic;
   font-weight: 400;
 }
-.experience-text105 {
-  font-weight: 700;
-}
-.experience-text107 {
-  font-weight: 700;
-}
 .experience-fragment11 {
   display: contents;
 }
@@ -1661,21 +1664,6 @@
 .experience-text128 {
   display: inline-block;
   font-style: italic;
-  font-weight: 400;
-}
-.experience-text129 {
-  font-weight: 400;
-}
-.experience-text130 {
-  font-weight: 700;
-}
-.experience-text131 {
-  font-weight: 400;
-}
-.experience-text132 {
-  font-weight: 700;
-}
-.experience-text133 {
   font-weight: 400;
 }
 .experience-fragment14 {
@@ -3344,6 +3332,27 @@
   }
   .experience-hero-text-container {
     width: 100%;
+  }
+  .experience-text105 {
+    font-weight: 700;
+  }
+  .experience-text107 {
+    font-weight: 700;
+  }
+  .experience-text129 {
+    font-weight: 400;
+  }
+  .experience-text130 {
+    font-weight: 700;
+  }
+  .experience-text131 {
+    font-weight: 400;
+  }
+  .experience-text132 {
+    font-weight: 700;
+  }
+  .experience-text133 {
+    font-weight: 400;
   }
   .experience-text167 {
     height: 43px;
