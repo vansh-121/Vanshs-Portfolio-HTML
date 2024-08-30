@@ -254,6 +254,9 @@
 
 
 
+.testimonial-card3root-class-name {
+  display: none;
+}
 @media(max-width: 767px) {
   .testimonial-card3-icon1 {
     height: 48px;
@@ -938,7 +941,7 @@
 }
 .home-testimonial {
   width: 100%;
-  display: flex;
+  display: none;
   padding: 48px;
   max-width: 1400px;
   align-items: center;
