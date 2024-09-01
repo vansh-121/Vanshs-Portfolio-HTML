@@ -139,13 +139,31 @@
         <div data-role="Header" class="portfolio-navbar-container">
           <div class="portfolio-navbar">
             <a
-              href="https://www.linkedin.com/in/vansh-sethi-vs/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="portfolio-heading1 Card-Heading"
-            >
-              Vansh Sethi
-            </a>
+            href="https://www.linkedin.com/in/vansh-sethi-vs/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="home-heading1 Card-Heading"
+            id="Vansh"
+          >
+          </a>
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const text = "Vansh Sethi";
+              const element = document.getElementById("Vansh");
+              let index = 0;
+          
+              function type() {
+                if (index < text.length) {
+                  element.textContent += text.charAt(index);
+                  index++;
+                  setTimeout(type, 50); // Adjust the speed here, lower value means faster typing
+                }
+              }
+          
+              type();
+            });
+          </script>
             <div class="portfolio-links-container1">
               <a href="index.html" class="portfolio-link10 Navbar-Link">Home</a>
               <a href="experience.html" class="portfolio-link11 Navbar-Link">

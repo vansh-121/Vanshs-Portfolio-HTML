@@ -138,7 +138,32 @@
       <div class="experience-container10">
         <div data-role="Header" class="experience-navbar-container">
           <div class="experience-navbar">
-            <span class="experience-heading1 Card-Heading">Vansh Sethi</span>
+            <a
+            href="https://www.linkedin.com/in/vansh-sethi-vs/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="home-heading1 Card-Heading"
+            id="Vansh"
+          >
+          </a>
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const text = "Vansh Sethi";
+              const element = document.getElementById("Vansh");
+              let index = 0;
+          
+              function type() {
+                if (index < text.length) {
+                  element.textContent += text.charAt(index);
+                  index++;
+                  setTimeout(type, 50); // Adjust the speed here, lower value means faster typing
+                }
+              }
+          
+              type();
+            });
+          </script>
             <div class="experience-links-container1">
               <a href="index.html" class="experience-link10 Navbar-Link">
                 Home
