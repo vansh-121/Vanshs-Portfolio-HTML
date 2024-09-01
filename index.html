@@ -259,13 +259,134 @@
                   easing="ease"
                   iteration="1"
                 >
-                  <h1 data-thq-animate-on-reveal="true" class="home-heading3">
-                    <span class="Section-Heading home-text10">
-                      I'm a Public Speaker, Mentor, VR Designer, and AI-ML
-                      Enthusiast
-                    </span>
-                    <br />
-                  </h1>
+                <h1 data-thq-animate-on-reveal="true" class="home-heading3">
+                  <span class="Section-Heading home-text10">I'm a </span>
+                  <span class="Section-Heading home-text10 highlight" id="typewriter"></span>
+                  <br />
+                </h1>       
+                <style>
+                  /* General styling for both the static and rotating text */
+                /* General styling for both static and rotating text */
+              /* General styling for both static and rotating text */
+              /* General styling for both static and rotating text */
+           /* General styling for both static and rotating text */
+                    .Section-Heading {
+                      font-family: 'Overpass', sans-serif;
+                      font-weight: 900;
+                      line-height: 1.22;
+                      display: inline-flex;
+                      align-items: center;
+                      vertical-align: middle;
+                      color: rgb(4, 4, 4);
+                    }
+
+                    /* Specific style for "I'm a" text */
+                    #static-text {
+                      color: rgb(4, 4, 4);
+                    }
+
+                    /* Specific style for rotating text */
+                    #typewriter {
+                      display: inline-block;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      color: #003eb3;
+                      border-right: 2px solid #003eb3;
+                      animation: blink-caret 0.75s step-end infinite;
+                      /* text-decoration: underline; */
+                      vertical-align: middle;
+                    }
+                    #typewriter:hover {
+                    color: #024b06; /* Change color to black on hover */
+                    border-color: #024b06; /* Change caret color to black on hover */
+                  }
+
+                    /* Blink caret effect */
+                    @keyframes blink-caret {
+                      from, to { border-color: transparent; }
+                      50% { border-color: #003eb3; }
+                    }
+
+                    /* Responsive styles */
+                    @media (max-width: 1200px) {
+                      .Section-Heading {
+                        font-size: 56px; /* Adjust for large screens */
+                      }
+                    }
+
+                    @media (max-width: 992px) {
+                      .Section-Heading {
+                        font-size: 50px; /* Adjust for medium screens */
+                      }
+                    }
+
+                    @media (max-width: 768px) {
+                      .Section-Heading {
+                        font-size: 44px; /* Adjust for tablets */
+                      }
+                    }
+
+                    @media (max-width: 576px) {
+                      .Section-Heading {
+                        font-size: 38px; /* Adjust for large phones */
+                      }
+                    }
+
+                    @media (max-width: 400px) {
+                      .Section-Heading {
+                        font-size: 32px; /* Adjust for small phones */
+                      }
+                    }
+
+
+
+                </style>
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  var phrases = ["Public Speaker.,", "Mentor.,", "VR Designer.,", "AI-ML Enthusiast. "];
+                  var typewriterElement = document.getElementById("typewriter");
+                  var i = 0;
+                  var j = 0;
+                  var currentPhrase = '';
+                  var isDeleting = false;
+                  var speed = 100;
+
+                  function typeWriter() {
+                    currentPhrase = phrases[i];
+
+                    if (!isDeleting && j <= currentPhrase.length) {
+                      typewriterElement.innerHTML = currentPhrase.substring(0, j);
+                      j++;
+                      speed = 100;
+                    }
+
+                    if (isDeleting && j > 0) {
+                      typewriterElement.innerHTML = currentPhrase.substring(0, j - 1);
+                      j--;
+                      speed = 50;
+                    }
+
+                    if (!isDeleting && j === currentPhrase.length) {
+                      isDeleting = true;
+                      speed = 1000; // Pause before deleting
+                    }
+
+                    if (isDeleting && j === 0) {
+                      isDeleting = false;
+                      i++;
+                      if (i === phrases.length) {
+                        i = 0; // Loop back to the first phrase
+                      }
+                    }
+
+                    setTimeout(typeWriter, speed);
+                  }
+
+                  typeWriter();
+                });
+
+
+                </script>             
                 </animate-on-reveal>
               </div>
               <animate-on-reveal
